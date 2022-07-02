@@ -17,4 +17,8 @@ public abstract class ave {
         this.alturavuelo=alturavuelo;
     }
     
+    public String Descripción(){
+        return "Esto es un ave";
+    }
+    
 }
