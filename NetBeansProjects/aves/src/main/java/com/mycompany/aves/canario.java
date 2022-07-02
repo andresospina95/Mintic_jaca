@@ -47,5 +47,6 @@ public class canario extends ave  implements acciones{
     public void calcularalcance() {
     }
 
+
     
 }

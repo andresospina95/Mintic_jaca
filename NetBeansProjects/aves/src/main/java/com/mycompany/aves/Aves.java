@@ -5,6 +5,8 @@
 
 package com.mycompany.aves;
 
+import java.util.ArrayList;
+
 public class Aves {
 
     public static void main(String[] args) {
@@ -17,5 +19,9 @@ public class Aves {
         System.out.println(piolin.getvelocidad());
         piolin.volar();
         
+        ArrayList<ave> misaves;
+        
+        
+
     }
 }
