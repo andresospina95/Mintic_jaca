@@ -44,4 +44,11 @@ public class aguila extends ave {
     public void setalturavuelo(float av){
     this.alturavuelo=av;
     }
+    
+        @Override
+    public String Descripción(){
+    
+        System.out.println("cazar primer");
+        return "comer";
+    }
 }

@@ -9,7 +9,7 @@ package com.mycompany.aves;
  * @author aospinam
  */
 public interface acciones {
-    
+   
     public void alimentarse();
     public void calcularalcance();
-}
+} 

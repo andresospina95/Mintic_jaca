@@ -41,12 +41,22 @@ public class canario extends ave  implements acciones{
 
     @Override
     public void alimentarse() {
+            if(1==1){
+        System.out.println("1 es igual a 1");
+    }
     }
 
     @Override
     public void calcularalcance() {
+        
+        
     }
 
+    @Override
+    public String Descripción(){
+
+        return "Comer";
+    }
 
     
 }
