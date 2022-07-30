@@ -15,6 +15,9 @@ public class AreaTriangulo extends Geometria {
     float altura;
         
     public AreaTriangulo(float base, float altura) {
+        if(base<=0||altura<=0){
+        throw new IllegalArgumentException("los valores deben ser positivos");
+        }
         this.base = base;
         this.altura = altura;
     }

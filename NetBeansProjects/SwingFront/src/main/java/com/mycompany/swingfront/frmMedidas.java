@@ -147,7 +147,6 @@ public class frmMedidas extends javax.swing.JFrame {
     private void txtBaseInputMethodTextChanged(java.awt.event.InputMethodEvent evt) {//GEN-FIRST:event_txtBaseInputMethodTextChanged
         // TODO add your handling code here:
         
-        Container c = frmMedidas.getContentPane();
 //        lblanch.setText(txtBase.getText());
     }//GEN-LAST:event_txtBaseInputMethodTextChanged
 
