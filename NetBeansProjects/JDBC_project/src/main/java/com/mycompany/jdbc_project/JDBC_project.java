@@ -25,8 +25,8 @@ public class JDBC_project {
         StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
         
         SessionFactory factory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
-        crearRegistros(factory);
-        
+        //crearRegistros(factory);
+        listarRegistros(factory);
     }
     
     public static void crearRegistros(SessionFactory factory){
@@ -41,10 +41,11 @@ public class JDBC_project {
     }
     }
     
-    public static void listarregistros(SessionFactory factory){
-        try(Session sesion =factory.openSession()){
+    public static void listarRegistros(SessionFactory factory){
+       try(Session sesion =factory.openSession()){
        Transaction transaction = sesion.beginTransaction();
-       Query consulta = sesion.createQuery("select * from classicmodels.customers order by customerNumber desc limit 10;");
+       Query consulta = sesion.createQuery("from Customer");
+       System.out.println("Consultando la base de datos");
        List<Customer> clientes = consulta.list();
        for(Customer c : clientes){
            System.out.println(c);

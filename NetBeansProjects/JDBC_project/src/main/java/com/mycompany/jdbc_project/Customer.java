@@ -19,7 +19,7 @@ import javax.persistence.Table;
 public class Customer implements Serializable {
 
 @Id
-private int customerNumber;
+private Integer customerNumber;
 @Column(nullable=false)
 private String customerName;
 @Column(nullable=false)
@@ -41,7 +41,7 @@ private String postalCode;
 @Column(nullable=false)
 private String country;
 @Column(nullable=true)
-private int salesRepEmployeeNumber;
+private Integer salesRepEmployeeNumber;
 @Column(nullable=true, precision=10, scale=2)
 private BigDecimal creditLimit;
  
